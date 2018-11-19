@@ -9,7 +9,9 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
+<!-- По навигации замечания такие же, как в Индексе -->
             <a class="main-header-logo">
+<!-- Логотип это ссылка на главную.  -->
                 <img src="" width="200" height="100" alt="Логотип DEVICE">
             </a>
             <ul class="site-navigation">
@@ -27,14 +29,17 @@
     <main class="container">
         <h1 class="page-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
+<!-- Для хлебных крошек лучше подходит нумерованый список -->
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог товаров</a></li>
             <li class="breadcrumbs-current">Моноподы для селфи</li>
+<!-- Последний элемент списка хлебных крошек должен быть также ссылкой, но без аттрибута хреф. Так как страница не должна ссылаться сама на себя. Именно по этой причине тебе придется поменять url у второго элемента настоящего списка. Сейчас там стоит url этой же страницы, тебе нужно придумать url страницы общего каталога (например catalog-main.html) -->
         </ul>
         <section class="menu-color">
             <h2 class="user-color"><b>Цвет</b></h2>
             <ul class="color">
                 <li>Черный</li>
+<!-- Это все должны быть чекбоксы. -->
                 <li>Белый</li>
                 <li>Синий</li>
                 <li>Красный</li>
@@ -43,20 +48,30 @@
             <h2 class="user-bluetooth"><b>Bluetooth</b></h2>
             <ul>
                 <li>Есть</li>
+<!-- Это должны быть радиобаттоны -->
                 <li>Нет</li>
             </ul>
             <h3><a href="#">Показать</a></h3>
+<!-- Это не заголовок, а кнопка отправки формы -->
+<!-- логика построения этого блока должна быть такой: http://prntscr.com/lk4ez9 -->
+
 
         </section>
         <section class="catalog-image">
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <h3><a href="catalog-item.html"><span>Любительская селфи палка</span></a></h3>
+<!-- тег span лишний в заголовке -->
                     <p class="catalog-item.html">
                         <a href="catalog-item.html">
-                            <img src="http://placehold.it/150x100" width="220" height="165" alt="Любительская селфи палка"></a></p>
+                            <img src="http://placehold.it/150x100" width="220" height="165" alt="Любительская селфи палка">
+                        </a>
+ <!-- Ссылкой на отдельную страницу товара является только название товара. См. пункт 3.13 ТЗ -->
+                    </p>
                     <p class="catalog-item-price">
-                        <b>500 Р</b></p>
+                        <b>500 Р</b>
+<!-- тег b лишний в цене-->
+                    </p>
 
                 </li>
                 <li class="catalog-item">
@@ -88,6 +103,8 @@
         </section>
     </main>
     <footer class="main-footer">
+<!-- По футеру замечания такие же как в индексе -->
+<!-- Валентина Петухова забыл. См. Макет -->
             <p class="footer-contacts">
                 <img src="index.html" width="100" height="100" alt="logo-footer">
                 г. Москва, ул. Строителей, 15
