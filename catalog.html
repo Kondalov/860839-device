@@ -12,12 +12,11 @@
             <a class="main-header-logo">
                 <img src="" width="200" height="100" alt="Логотип DEVICE">
             </a>
-            
-<!-- Войти, Сравнить, Корзина не являются элементами навигации. Тег nav определяет ОСНОВНУЮ навигацию по сайту. Под понятием "Основная навигация" имеется в виду навигационное меню. А вот элементы Войти, Сравнить, Корзина относятся к блоку пользовательской навигации. Вынеси их из навигации. -->
-<!--Кондалов: 19.11.2018 Вынес в отдельный блок DIV class user-navigation "Войти, Сравнить, Корзина"-->
-                
-<!-- Поиск по сайту это input type="search". Нет смысла размещать его в навигации. Вынеси его из этого списка. -->
-<!--Кондалов: 19.11.2018 - Поиск по сайту вынес в отдельный блок div class site-search-->
+            <!-- Войти, Сравнить, Корзина не являются элементами навигации. Тег nav определяет ОСНОВНУЮ навигацию по сайту. Под понятием "Основная навигация" имеется в виду навигационное меню. А вот элементы Войти, Сравнить, Корзина относятся к блоку пользовательской навигации. Вынеси их из навигации. -->
+            <!--Кондалов: 19.11.2018 Вынес в отдельный блок DIV class user-navigation "Войти, Сравнить, Корзина"-->
+
+            <!-- Поиск по сайту это input type="search". Нет смысла размещать его в навигации. Вынеси его из этого списка. -->
+            <!--Кондалов: 19.11.2018 - Поиск по сайту вынес в отдельный блок div class site-search-->
             <ul class="products">
                 <li class="catalog-products">Каталог товаров</li>
                 <li class="user-delivery"><a href="#">Доставка</a></li>
@@ -26,102 +25,100 @@
             </ul>
         </nav>
         <div class="user-navigation">
-            <ul class="user-navigation">
-             <li class="login-link"><a href="#">Войти</a></li>
-             <li class="user-basket"><a href="basket.html">Корзина</a></li>
-             <li class="compare-site"><a href="compare.html">Сравнить</a></li>
-             </ul>
+            <ul class="navigation-list">
+                <li class="login-link"><a href="#">Войти</a></li>
+                <li class="user-basket"><a href="basket.html">Корзина</a></li>
+                <li class="compare-site"><a href="compare.html">Сравнить</a></li>
+            </ul>
         </div>
         <div class="site-search">
             <input type="search" placeholder="Поиск по сайту" alt="Поиск по сайту">
         </div>
-    </header>
-    <main class="container">
-        <h1 class="page-title">Моноподы для селфи</h1>
-        <ol class="breadcrumbs">
-<!-- Для хлебных крошек лучше подходит нумерованый список -->
-<!--Кондалов: 19.11.2018 Поменял тег ul на ol - нумерованный список-->
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog-main.html">Каталог товаров</a></li>
-            <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
-<!-- Последний элемент списка хлебных крошек должен быть также ссылкой, но без аттрибута хреф. Так как страница не должна ссылаться сама на себя. Именно по этой причине тебе придется поменять url у второго элемента настоящего списка. Сейчас там стоит url этой же страницы, тебе нужно придумать url страницы общего каталога (например catalog-main.html) -->
-<!--Кондалов: 19.11.2018 Добавил ссылку к последниму элементу и заменил url у второго элемента-->
-        </ol>
-        <section class="menu-color">
-            <h2 class="user-color"><b>Цвет</b></h2>
-            <input type="checkbox" name="color" id="color-field" checked>
-            <label for="color-field">Черный</label><br>
-            <input type="checkbox" name="color" id="color-field">
-            <label for="color-field">Белый</label><br>
-            <input type="checkbox" name="color" id="color-field" checked>
-            <label for="color-field">Синий</label><br>
-            <input type="checkbox" name="color" id="color-field" checked>
-            <label for="color-field">Красный</label><br>
-            <input type="checkbox" name="color" id="color-field">
-            <label for="color-field">Розовый</label><br>
-<!-- Это все должны быть чекбоксы. -->
-<!--Кондалов: 19.11.2018 сделал чекбоксы вместо списка li-->
+        </header>
+        <main class="container">
+            <h1 class="page-title">Моноподы для селфи</h1>
+            <ol class="breadcrumbs">
+                <!-- Для хлебных крошек лучше подходит нумерованый список -->
+                <!--Кондалов: 19.11.2018 Поменял тег ul на ol - нумерованный список-->
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog-main.html">Каталог товаров</a></li>
+                <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+                <!-- Последний элемент списка хлебных крошек должен быть также ссылкой, но без аттрибута хреф. Так как страница не должна ссылаться сама на себя. Именно по этой причине тебе придется поменять url у второго элемента настоящего списка. Сейчас там стоит url этой же страницы, тебе нужно придумать url страницы общего каталога (например catalog-main.html) -->
+                <!--Кондалов: 19.11.2018 Добавил ссылку к последниму элементу и заменил url у второго элемента-->
+            </ol>
+            <section class="menu-color">
+                <h2 class="user-color"><b>Цвет</b></h2>
+                <input type="checkbox" name="color" id="color-field" checked>
+                <label for="color-field">Черный</label><br>
+                <input type="checkbox" name="color" id="color-field">
+                <label for="color-field">Белый</label><br>
+                <input type="checkbox" name="color" id="color-field" checked>
+                <label for="color-field">Синий</label><br>
+                <input type="checkbox" name="color" id="color-field" checked>
+                <label for="color-field">Красный</label><br>
+                <input type="checkbox" name="color" id="color-field">
+                <label for="color-field">Розовый</label><br>
+                <!-- Это все должны быть чекбоксы. -->
+                <!--Кондалов: 19.11.2018 сделал чекбоксы вместо списка li-->
+                <h2 class="user-bluetooth"><b>Bluetooth</b></h2>
+                <label><input type="radio" checked>Есть</label>
+                <label><input type="radio">Нет</label><br>
+                <!-- Это должны быть радиобаттоны -->
+                <!--Кондалов: 19.11.2018 Добавил радиобаттоны вместо списка li-->
 
-            <h2 class="user-bluetooth"><b>Bluetooth</b></h2>
-            <label><input type="radio" checked>Есть</label>
-            <label><input type="radio">Нет</label><br>
-<!-- Это должны быть радиобаттоны -->
-<!--Кондалов: 19.11.2018 Добавил радиобаттоны вместо списка li-->
-
-<input type="button" value="Показать">
-<!-- Это не заголовок, а кнопка отправки формы -->
-<!-- логика построения этого блока должна быть такой: http://prntscr.com/lk4ez9 -->
-<!--Кондалов: 19.11.2018 добавил кнопку-->
-        </section>
-        <section class="catalog-image">
-            <ul class="catalog-list">
-                <li class="catalog-item">
-                    <h3><a href="catalog-item.html">Любительская селфи палка</a></h3>
-<!-- тег span лишний в заголовке -->
-<!--Кондалов: 19.11.2018 Убрал тег span-->
-                    <p class="catalog-item.html">
-                        <img src="http://placehold.it/150x100" width="220" height="165" alt="Любительская селфи палка">
- <!-- Ссылкой на отдельную страницу товара является только название товара. См. пункт 3.13 ТЗ -->
- <!--Кондалов: 19.11.2018 Убрал ссылку с картинки-->
-                    </p>
-                    <p class="catalog-item-price">
-                        500 Р</p>
-<!-- тег b лишний в цене-->
-<!--Кондалов: 19.11.2018 - убрал тег b-->
-                </li>
-                <li class="catalog-item">
-                    <h3><a href="catalog-item.html"><span>Профессиональная селфи-палка</span></a></h3>
-                    <p class="catalog-item.html">
-                        <img src="http://placehold.it/150x100" width="220" height="165" alt="Профессиональная селфи-палка"></p>
-                    <p class="catalog-item-price">
-                        1 500 Р</p>
-
-                </li>
-                <li class="catalog-item">
-                    <h3><a href="catalog-item.html"><span>Непотопляемая селфи-палка</span></a></h3>
-                    <p class="catalog-item.html">
-                        <img src="http://placehold.it/150x100" width="220" height="165" alt="Непотопляемая селфи-палка"></a></p>
-                    <p class="catalog-item-price">
-                        2 500 Р</p>
-                </li>
-                <li class="catalog-item">
-                    <h3><a href="catalog-item.html"><span>Селфи-палка «Следуй за мной»</span></a></h3>
-                    <p class="catalog-item.html">
-                        <img src="http://placehold.it/150x100" width="220" height="165" alt="Селфи-палка «Следуй за мной»"></p>
-                    <p class="catalog-item-price">
-                        4 900 Р</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <p class="footer-contacts">
-            г. Москва, ул. Строителей, 15</p>
-        <p class="user-name">Валентин Петухов</p>
-<!-- Лучше сделать логотип отдельно,  адрес отдельно -->
-<a class="logo-footer" href="#">
-<img src="index.html" width="100" height="100" alt="logo-footer"></a>
-<!--Кондалов: 19.11.2018 Вынес логотип отдельно от адреса-->
+                <input type="button" value="Показать">
+                <!-- Это не заголовок, а кнопка отправки формы -->
+                <!-- логика построения этого блока должна быть такой: http://prntscr.com/lk4ez9 -->
+                <!--Кондалов: 19.11.2018 добавил кнопку-->
+            </section>
+            <section class="catalog-image">
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <h3><a href="catalog-item.html">Любительская селфи палка</a></h3>
+                        <!-- тег span лишний в заголовке -->
+                        <!--Кондалов: 19.11.2018 Убрал тег span-->
+                        <p class="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="220" height="165" alt="Любительская селфи палка">
+                            <!-- Ссылкой на отдельную страницу товара является только название товара. См. пункт 3.13 ТЗ -->
+                            <!--Кондалов: 19.11.2018 Убрал ссылку с картинки-->
+                        </p>
+                        <p class="catalog-item-price">
+                            500 Р</p>
+                        <!-- тег b лишний в цене-->
+                        <!--Кондалов: 19.11.2018 - убрал тег b-->
+                    </li>
+                    <li class="catalog-item">
+                        <h3><a href="catalog-item.html"><span>Профессиональная селфи-палка</span></a></h3>
+                        <p class="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="220" height="165" alt="Профессиональная селфи-палка"></p>
+                        <p class="catalog-item-price">
+                            1 500 Р</p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3><a href="catalog-item.html"><span>Непотопляемая селфи-палка</span></a></h3>
+                        <p class="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="220" height="165" alt="Непотопляемая селфи-палка"></a></p>
+                        <p class="catalog-item-price">
+                            2 500 Р</p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3><a href="catalog-item.html"><span>Селфи-палка «Следуй за мной»</span></a></h3>
+                        <p class="catalog-item.html">
+                            <img src="http://placehold.it/150x100" width="220" height="165" alt="Селфи-палка «Следуй за мной»"></p>
+                        <p class="catalog-item-price">
+                            4 900 Р</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <p class="footer-contacts">
+                г. Москва, ул. Строителей, 15</p>
+            <p class="user-name">Валентин Петухов</p>
+            <!-- Лучше сделать логотип отдельно,  адрес отдельно -->
+            <a class="logo-footer" href="#">
+                <img src="index.html" width="100" height="100" alt="logo-footer"></a>
+            <!--Кондалов: 19.11.2018 Вынес логотип отдельно от адреса-->
             <div class="footer-info">
                 <ul>
                     <li><a href="#">Доставка</a></li>
@@ -130,12 +127,12 @@
                 </ul>
             </div>
             <div class="footer-social">
-                    <ul>
-                        <li><a class="social-button" href="#">Facebook</a></li>
-                        <li><a class="social-button" href="#">Instagram</a></li>
-                        <li><a class="social-button" href="#">Twitter</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a class="social-button" href="#">Facebook</a></li>
+                    <li><a class="social-button" href="#">Instagram</a></li>
+                    <li><a class="social-button" href="#">Twitter</a></li>
+                </ul>
+            </div>
             <div class="user-menu">
                 <ul>
                     <li><a href="user-cabinet.html">Выйти</a></li>
@@ -145,10 +142,8 @@
             </div>
             <p class="info-tel">Тел.: +7 (495) 495-95-95</p>
             <p class="footer-copyright">
-                    <img src="https://htmlacademy.ru/intensive/htmlcss" alt="логотим HTML-Academy">
-                    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy: Kondalov</a>
-                </p>
-
+                <img src="https://htmlacademy.ru/intensive/htmlcss" alt="логотим HTML-Academy">
+            </p>
         </footer>
 </body>
 </html>
