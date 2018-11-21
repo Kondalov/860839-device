@@ -10,12 +10,8 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-                <img src="" width="200" height="100" alt="Логотип DEVICE">
+                <img src="#" width="200" height="100" alt="Логотип DEVICE">
             </a>
-            <!-- Войти, Сравнить, Корзина не являются элементами навигации. Тег nav определяет ОСНОВНУЮ навигацию по сайту. Под понятием "Основная навигация" имеется в виду навигационное меню. А вот элементы Войти, Сравнить, Корзина относятся к блоку пользовательской навигации. Вынеси их из навигации. -->
-            <!--Кондалов: 19.11.2018 Вынес в отдельный блок DIV class user-navigation "Войти, Сравнить, Корзина"-->
-            <!-- Поиск по сайту это input type="search". Нет смысла размещать его в навигации. Вынеси его из этого списка. -->
-            <!--Кондалов: 19.11.2018 - Поиск по сайту вынес в отдельный блок div class site-search-->
             <ul class="products">
                 <li class="catalog-products">Каталог товаров</li>
                 <li class="user-delivery"><a href="#">Доставка</a></li>
@@ -31,7 +27,7 @@
             </ul>
         </div>
         <div class="site-search">
-            <input type="search" placeholder="Поиск по сайту" alt="Поиск по сайту">
+            <input type="search" placeholder="Поиск по сайту">
         </div>
     </header>
     <section class="info-index">
@@ -45,9 +41,6 @@
             <li><b>ЖелДорЭкспедиция</b></li>
         </ul>
         <a href="info.html">Подробнее о нас</a>
-        <!--Кондалов: 19.11.2018 - Исправил тег h3 на p-->
-        <!-- "Подробнее о нас" заголовок тут не нужен, оставь только ссылку. Так как нечего озаглавливать. -->
-        <!--Кондалов: 20.11.2018 убрал тег р из ссылки-->
     </section>
     <section class="contacts-index">
         <h2 class="visually-contacts">Контакты:</h2>
@@ -56,16 +49,12 @@
         <p class="info-map">
             <img src="http://placehold.it/150x100" alt="карта гугл или яндекс"></p>
         <a href="email.com">Напишите нам</a>
-        <!-- "Напишите нам" заголовок тут не нужен, оставь только ссылку. Так как нечего озаглавливать. -->
-        <!--Кондалов: 19.11.2018 - Исправил тег h3 на p-->
     </section>
     <footer class="main-footer">
         <p class="footer-contacts">
             г. Москва, ул. Строителей, 15</p>
-        <!-- Лучше сделать логотип отдельно,  адрес отдельно -->
         <a class="logo-footer" href="#">
             <img src="index.html" width="100" height="100" alt="logo-footer"></a>
-        <!--Кондалов: 19.11.2018 Вынес логотип отдельно от адреса-->
         <div class="footer-info">
             <ul>
                 <li><a href="#">Доставка</a></li>
@@ -92,8 +81,6 @@
             <a class="logo-footer" href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="logo.jpg" alt="логотим HTML-Academy"></a>
             </p>
-            <!-- логотип также должен быть ссылкой -->
-            <!--Кондалов: 19.11.2018 Добавил ссылку в логотип-->
     </footer>
 </body>
 </html>
