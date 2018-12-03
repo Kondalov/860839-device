@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Каталог DEVICE</title>
+    <title>Каталог товаров DEVICE</title>
     <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
@@ -11,11 +11,11 @@
             <a class="main-header-logo">
                 <img src="img/logo.png" width="163" height="36" alt="Логотип DEVICE">
             </a>
-            <ul class="products">
-                <li class="catalog-products">Каталог товаров</li>
-                <li class="user-delivery"><a href="#">Доставка</a></li>
-                <li class="user-warranty"><a href="#">Гарантия</a></li>
-                <li class="user-contacts"><a href="#">Контакты</a></li>
+        <ul class="products">
+            <li class="catalog-products">Каталог товаров</li>
+            <li class="user-delivery"><a href="#">Доставка</a></li>
+            <li class="user-warranty"><a href="#">Гарантия</a></li>
+            <li class="user-contacts"><a href="#">Контакты</a></li>
             </ul>
         </nav>
         <div class="user-navigation">
@@ -25,17 +25,23 @@
                 <li class="compare-site"><a href="compare.html">Сравнить</a></li>
             </ul>
         </div>
-        <div class="site-search">
-            <input type="search" placeholder="Поиск по сайту">
-        </div>
+        <form action="#" method="POST">
+            <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+            <button class="search-form-submit" type="submit">Найти</button>
+        </form>
         </header>
         <main class="container">
             <h1 class="page-title">Моноподы для селфи</h1>
             <ol class="breadcrumbs">
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog-main.html">Каталог товаров</a></li>
-                <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li class="breadcrumbs-current"><a href="#">Моноподы для селфи</a></li>
             </ol>
+            <section class="user-filter">
+                <h2 class="visually-hidden">Фильтр:</h2>
+                <label for="price">Стоимость</label>
+                0 <input type="range" id="price" name="price" min="0" max="5000" step="1"> 5000
+            </section>
             <section class="menu-color">
                 <h2 class="user-color"><b>Цвет</b></h2>
                 <input type="checkbox" name="color" id="black" checked>
@@ -53,6 +59,20 @@
                 <label><input type="radio">Нет</label><br>
                 <input type="button" value="Показать">
             </section>
+
+            <section class="sorting">
+                <h2>Сортировка:</h2>
+                <ul class="sorting-list">
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По популярности</a></li>
+                </ul>
+                <ul class="list-function">
+                    <li><a href="#">По возрастанию</a></li>
+                    <li><a href="#">По убыванию</a></li>
+                </ul>
+            </section>
+
             <section class="catalog-image">
                 <ul class="catalog-list">
                     <li class="catalog-item">
@@ -84,6 +104,16 @@
                         <p class="catalog-item-price">
                             4 900 Р</p>
                     </li>
+                </ul>
+            </section>
+            <!--Меню вперед 1 2 3 4 назад (Перед футером)-->
+            <section class="pagination">
+                <ul class="pagination-list">
+                    <li><a href="#prev">Назад</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#next">Вперед</a></li>
                 </ul>
             </section>
         </main>
